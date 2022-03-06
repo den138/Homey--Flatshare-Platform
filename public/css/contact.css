@@ -1,0 +1,49 @@
+#cont h1 {
+  font-size: 45px;
+  text-align: center;
+}
+
+#cont-box {
+  font-family: "Times New Roman", Times, serif;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: none;
+}
+
+input[type="submit"] {
+  background-color: #e1341e;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #e1341e;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #969696;
+  padding: 20px;
+  width: 50%;
+  margin-left: 25%;
+}
+
+/* body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+} */

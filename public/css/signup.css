@@ -1,0 +1,67 @@
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#form-container {
+  width: 40%;
+  border: 3px solid #f1f1f1;
+  padding: 3em;
+  margin-top: 2em;
+}
+
+hr {
+  margin-bottom: 30px;
+}
+
+input:not([type="radio"]) {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: #f1f1f1;
+  margin-bottom: 20px;
+}
+
+input:focus {
+  outline: none;
+}
+
+#signup-btn {
+  background-color: #e1341e;
+  color: white;
+  padding: 14px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+#radio-input {
+  margin-left: 1em;
+}
+
+textarea {
+  width: 100%;
+  resize: none;
+  height: 100px;
+}
+
+@media (max-width: 1000px) {
+  #form-container {
+    width: 60%;
+  }
+}
+
+@media (max-width: 700px) {
+  #form-container {
+    width: 70%;
+  }
+}
+
+@media (max-width: 400px) {
+  #form-container {
+    width: 80%;
+  }
+}

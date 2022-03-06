@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/post-room.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Homey</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div id="logo-container"><a href="index.html"><img src="./image/logo_optimized.png" alt=""></a></div>
+      <a href="#" class='toggle-button'>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <div class="nav-links">
+        <ul>
+          <li><a href="./rooms.html">Rooms</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="./about-us.html">About Us</a></li>
+          <li><a href="./faq.html">FAQ</a></li>
+          <li><a href="/profile.html">Profile</a></li>
+        </ul>
+      </div>
+  </header>
+
+  <main>
+    <div class="wrapper">
+      <div class="title">
+        POST YOUR ROOM
+      </div>
+      
+      <form id="post-room-form">
+        <div class="input_field">
+          <label>District</label>
+          <div class="custom_select"><select name="district" required>
+              <option value="Hong Kong">Hong Kong</option>
+              <option value="Kowloon">Kowloon</option>
+              <option value="New Territories">New Territories</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="input_field">
+          <label>Address</label>
+          <textarea class="textarea" name="address" required></textarea>
+        </div>
+        <div class="input_field">
+          <label>Flatarea (ft2)</label>
+          <input class="input" type="number" name="size" required min=1></input>
+          <!-- <div class="custom_select"><select name="flatarea" id="">
+              <option value="300">300 and Below</option>
+              <option value="300-400">300-400</option>
+              <option value="500-600">500-600</option>
+              <option value="600-700">600-700</option>
+              <option value="700-800">700-800</option>
+              <option value="800">800 and Above</option>
+            </select>
+        </div> -->
+        </div>
+        <div class="input_field">
+          <label>Monthly rent</label>
+          <input class="input" type="number" name="rent" required min=0></input>
+        </div>
+        <div class="input_field">
+          <label>Member (including host)</label>
+          <input class="input" type="number" name="member" required min=1></input>
+        </div>
+        <div class="input_field">
+          <label>Rental Period (Month)</label>
+          <input class="input" type="number" name="period" required min=1></input>
+        </div>
+        <div class="input_field">
+          <label>Rules</label>
+          <textarea class="textarea" name="rules" required></textarea>
+        </div>
+        <div class="input_field icons">
+
+          <div><input type="checkbox" id="Wifi" name="wifi" value="Wifi"> <label><i
+                class="fas fa-wifi"></i><br>Wifi</label></div>
+          <div><input type="checkbox" id="Washer" name="washer" value="Washer"> <label><i
+                class="fas fa-toilet"></i><br>Washer</label>
+          </div>
+          <div><input type="checkbox" id="Bed" name="bed" value="Bed"> <label><i
+                class="fas fa-bed"></i><br>Bed</label></div>
+          <div><input type="checkbox" id="Fans" name="fans" value="Fans"> <label><i
+                class="fas fa-fan"></i><br>Fans</label></div>
+          <div><input type="checkbox" id="desk" name="desk" value="Desk"> <label><i
+                class="fas fa-table"></i><br>Desk</label>
+          </div>
+
+
+          <div><input type="checkbox" id="Televison" name="television" value="Television"> <label><i
+                class="fas fa-tv"></i><br>Television</label></div>
+          <div><input type="checkbox" id="Cooker" name="cooker" value="Cooker"> <label><i
+                class="fas fa-stroopwafel"></i><br>Cooker</label></div>
+          <div><input type="checkbox" id="Chair" name="chair" value="Chair"> <label><i
+                class="fas fa-chair"></i><br>Chair</label>
+          </div>
+          <div><input type="checkbox" id="Couch" name="couch" value="Couch"> <label><i
+                class="fas fa-couch"></i><br>Couch</label>
+          </div>
+          <div><input type="checkbox" id="ac" name="aircon" value="aircon"> <label><i
+                class="fas fa-wind"></i><br>A/C</label></div>
+        </div>
+        <div class="input_field">
+          <label>Upload three photos of your room</label>
+          <!-- <input type="file" name="image1" required>
+          <input type="file" name="image2" required>
+          <input type="file" name="image3" required> -->
+          <input type="file" name="image" required multiple>
+        </div>
+        <div class="input_field">
+          <input type="submit" class="btn" value="Submit"></input>
+        </div>
+        
+
+      </form>
+  </main>
+
+  <footer>
+    <div class="links-container">
+      <div><h4>FOLLOW US ON</h4></div>
+    <div class="social-link">
+      <a href="#"><i class="fab fa-facebook-f" class="facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter" class="twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram" class="insta"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in" class="linkedin"></i></a>
+    </div>
+    <div class="footer-logo"><img src="./image/logo_optimized.png" alt=""> <span>Homey &#169; 2021</span></div>
+  </footer>
+
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="./js/postRoom.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .msg-container{
+            border: 1px solid black;
+            height: 300px;
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div class="msg-container"></div>
+    <form id="form">
+        <label for="message-input"></label>
+        <input type="text" id="message-input">
+        <button type="submit" id="send-button">SEND</button>
+        <label for="room-input"></label>
+        <input type="text" id="room-input">
+        <button type="submit" id="room-button">Join</button>
+    </form>
+
+
+    <script>
+        const form = document.querySelector('#form')
+        const messageInput = document.querySelector('#message-input')
+        form.addEventListener('submit', e =>{
+            e.preventDefault()
+            const message = messageInput.value
+            if (message ===''){
+                return
+            }
+            displayMessage(message)
+        })
+        
+        funvtion 
+        // const socket = io.connect()
+        // socket.on('new-massage', function (){
+        //     socket.emit('greet')
+
+        // })
+        // socket.on("greet", function (msg) {
+        //     document.querySelector(".msg").innerText = msg;
+        // });
+        // socket.on('update',function (){
+
+        // })
+    </script>
+</body>
+</html>

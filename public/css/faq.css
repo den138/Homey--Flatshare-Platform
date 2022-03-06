@@ -1,0 +1,23 @@
+main {
+  display: flex;
+  justify-content: center;
+}
+
+#faq-box {
+  width: 35%;
+  font-family: "Times New Roman", Times, serif;
+}
+
+#faq-box h1 {
+  text-align: center;
+  font-size: 45px;
+}
+
+#faq-box h4 {
+  font-size: 30px;
+}
+
+#faq-box p {
+  font-size: 20px;
+  word-spacing: 6px;
+}
